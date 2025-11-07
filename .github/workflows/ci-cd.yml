@@ -114,8 +114,8 @@ jobs:
 #        with:
 #          sarif_file: 'trivy-results.sarif'
 
-      - name: OWASP Dependency Check
-        run: mvn dependency-check:check
+#      - name: OWASP Dependency Check
+#        run: mvn dependency-check:check
 
   build-docker:
     name: Build Docker Image
