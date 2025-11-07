@@ -15,11 +15,11 @@ public class GithubCicdActionsApplication {
     }
 
     // git init
-    //git add README.md
-    //git commit -m "first commit"
-    //git branch -M main
-    //git remote add origin git@github.com:kueshy/github-cicd-actions.git
-    //git push -u origin main
+    // git add README.md
+    // git commit -m "first commit"
+    // git branch -M main
+    // git remote add origin git@github.com:kueshy/github-cicd-actions.git
+    // git push -u origin main
 
     public static void main(String[] args) {
         SpringApplication.run(GithubCicdActionsApplication.class, args);
