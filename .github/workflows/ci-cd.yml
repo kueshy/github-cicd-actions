@@ -192,7 +192,7 @@ jobs:
           username: ${{ secrets.STAGING_USERNAME }}
           key: ${{ secrets.STAGING_SSH_KEY }}
           script: |
-            cd /opt/ams-health
+            cd /opt/ci-cd-pipeline
             docker-compose pull
             docker-compose up -d
             docker system prune -f
