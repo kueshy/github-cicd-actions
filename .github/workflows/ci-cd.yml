@@ -179,7 +179,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     environment:
       name: staging
-      url: https://staging.ams-health.com
+      url: https://staging.ci-cd-pipeline.com
 
     steps:
       - name: Checkout code
@@ -190,7 +190,7 @@ jobs:
         with:
           host: ${{ secrets.STAGING_HOST }}
           username: ${{ secrets.STAGING_USERNAME }}
-          key: ${{ secrets.STAGING_SSH_PASSWORD }}
+          password: ${{ secrets.STAGING_SSH_PASSWORD }}
           script: |
             cd /opt/ci-cd-pipeline
             docker-compose pull
