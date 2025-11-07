@@ -1,4 +1,5 @@
-FROM openjdk:17
+FROM eclipse-temurin:17-jre-alpine
+WORKDIR /app
+COPY target/github-actions.jar app.jar
 EXPOSE 8080
-ADD target/github-actions.jar github-actions.jar
-ENTRYPOINT ["java","-jar","/springboot-images-new.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
