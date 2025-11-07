@@ -190,7 +190,7 @@ jobs:
         with:
           host: ${{ secrets.STAGING_HOST }}
           username: ${{ secrets.STAGING_USERNAME }}
-          key: ${{ secrets.STAGING_SSH_KEY }}
+          key: ${{ secrets.STAGING_SSH_PASSWORD }}
           script: |
             cd /opt/ci-cd-pipeline
             docker-compose pull
