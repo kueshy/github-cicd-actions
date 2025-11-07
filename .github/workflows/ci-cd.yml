@@ -166,7 +166,7 @@ jobs:
 #          sudo systemctl restart docker
 
       - name: Login to private registry
-        run: echo ${{ secrets.DOCKER_REGISTRY_PASSWORD }} | docker http://login 192.168.4.39:5000 -u ${{ secrets.DOCKER_REGISTRY_USERNAME }} --password-stdin
+        run: echo ${{ secrets.DOCKER_REGISTRY_PASSWORD }} | docker login http://192.168.4.39:5000 -u ${{ secrets.DOCKER_REGISTRY_USERNAME }} --password-stdin
 
       - name: Extract metadata
         id: meta
